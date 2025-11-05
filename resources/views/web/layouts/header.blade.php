@@ -3,9 +3,9 @@
     <div class="topbar d-flex align-items-center">
         <div class="container d-flex justify-content-center justify-content-md-between">
             <div class="contact-info d-flex align-items-center">
-                {{-- <i class="bi bi-envelope d-flex align-items-center"><a --}}
-                        {{-- href="mailto:contact@example.com">{{ $setting->email }}</a></i> --}}
-                {{-- <i class="bi bi-phone d-flex align-items-center ms-4"><span>{{ $setting->phone }}</span></i> --}}
+                <i class="bi bi-envelope d-flex align-items-center"><a
+                        href="mailto:contact@example.com">info@example.com</a></i>
+                <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
             </div>
             <div class="social-links d-none d-md-flex align-items-center">
                 <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
@@ -19,19 +19,23 @@
     <div class="branding d-flex align-items-cente">
 
         <div class="container position-relative d-flex align-items-center justify-content-between">
-            <a href="index.html" class="logo d-flex align-items-center">
+            <a href="{{ url('/') }}" class="logo d-flex align-items-center">
                 <!-- Uncomment the line below if you also wish to use an image logo -->
-                <!-- <img src="assets/img/logo.png" alt=""> -->
-                {{-- <h1 class="sitename d-flex align-item-center"><img style="margin-right: 0px" src="{{ $setting->logoLink }}">{{ $setting->name_en }}</h1> --}}
+                <img src="{{ asset('assets/web/img/icon.png') }}" alt="">
+                <img src="{{ asset('assets/web/img/iocn2.png') }}" alt="">
+                {{-- <h1 class="sitename d-flex align-item-center">
+                    <img style="margin-right: 0px" src="{{ asset('assets/web/img/icon.png') }}">
+                    {{ __('web.title') }}
+                </h1> --}}
             </a>
 
             <nav id="navmenu" class="navmenu">
                 <ul>
                     <li><a href="#hero" class="active">{{ __('web.home') }}</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#team">Team</a></li>
+                    <li><a href="#about">{{ __('web.about') }}</a></li>
+                    <li><a href="#services">{{ __('web.service') }}</a></li>
+                    <li><a href="#portfolio">{{ __('web.profile') }}</a></li>
+                    {{-- <li><a href="#team">Team</a></li> --}}
                     {{-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i
                                 class="bi bi-chevron-down toggle-dropdown"></i></a>
                         <ul>
@@ -51,7 +55,7 @@
                             <li><a href="#">Dropdown 4</a></li>
                         </ul>
                     </li> --}}
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact">{{ __('web.contact') }}</a></li>
 
                     <style>
                         .disabled-lang {

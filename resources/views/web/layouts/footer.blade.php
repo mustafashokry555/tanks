@@ -5,16 +5,15 @@
             <div class="col-lg-4 col-md-6 footer-about">
                 <a href="{{ route('home') }}" class="logo d-flex align-items-center">
                     <span class="sitename">
-                        {{-- <img src="{{ $setting ? $setting->logoLink : URL::asset('assets/img/favicon.png') }}" class="main-logo m-0" --}}
-                            {{-- alt="logo"> --}}
-                        {{-- {{ $setting->name_en }} --}}
+                        <img src="{{ asset('assets/web/img/icon.png') }}" class="main-logo m-0" alt="logo">
+                        <img src="{{ asset('assets/web/img/iocn2.png') }}" class="main-logo m-0" alt="logo">
                     </span>
                 </a>
                 <div class="footer-contact pt-3">
                     <p>A108 Adam Street</p>
                     <p>New York, NY 535022</p>
-                    <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-                    <p><strong>Email:</strong> <span>info@example.com</span></p>
+                    <p class="mt-3"><strong>{{ __('web.Phone') }}:</strong> <span>+1 5589 55488 55</span></p>
+                    <p><strong>{{ __('web.Email') }}:</strong> <span>info@example.com</span></p>
                 </div>
                 <div class="social-links d-flex mt-4">
                     <a href=""><i class="bi bi-twitter-x"></i></a>
@@ -24,29 +23,29 @@
                 </div>
             </div>
 
-            <div class="col-lg-2 col-md-3 footer-links">
-                <h4>Useful Links</h4>
+            <div class="col-lg-3 col-md-3 footer-links">
+                <h4>{{ __('web.Useful_Links') }}</h4>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Terms of service</a></li>
-                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#hero">{{ __('web.home') }}</a></li>
+                    <li><a href="#about">{{ __('web.about') }}</a></li>
+                    <li><a href="#services">{{ __('web.service') }}</a></li>
+                    {{-- <li><a href="#">Terms of service</a></li>
+                    <li><a href="#">Privacy policy</a></li> --}}
                 </ul>
             </div>
 
-            <div class="col-lg-2 col-md-3 footer-links">
-                <h4>Our Services</h4>
+            <div class="col-lg-3 col-md-3 footer-links">
+                <h4>{{ __('web.services_title') }}</h4>
                 <ul>
-                    <li><a href="#">Web Design</a></li>
-                    <li><a href="#">Web Development</a></li>
-                    <li><a href="#">Product Management</a></li>
-                    <li><a href="#">Marketing</a></li>
-                    <li><a href="#">Graphic Design</a></li>
+                    <li><a href="#">{{ __('web.service_list_1') }}</a></li>
+                    <li><a href="#">{{ __('web.service_list_2') }}</a></li>
+                    <li><a href="#">{{ __('web.service_list_3') }}</a></li>
+                    <li><a href="#">{{ __('web.service_list_4') }}</a></li>
+                    <li><a href="#">{{ __('web.service_list_5') }}</a></li>
                 </ul>
             </div>
 
-            <div class="col-lg-2 col-md-3 footer-links">
+            {{-- <div class="col-lg-2 col-md-3 footer-links">
                 <h4>Hic solutasetp</h4>
                 <ul>
                     <li><a href="#">Molestiae accusamus iure</a></li>
@@ -66,16 +65,17 @@
                     <li><a href="#">Trodelas</a></li>
                     <li><a href="#">Flexo</a></li>
                 </ul>
-            </div>
+            </div> --}}
 
         </div>
     </div>
 
     <div class="container copyright text-center mt-4">
-        {{-- <p>© <span>Copyright</span> <strong class="px-1 sitename">{{ $setting->name_en }}</strong> <span>All Rights Reserved</span></p> --}}
+        <p>© <span>{{ __('web.Copyright') }}</span> <strong class="px-1 sitename">{{ __('web.title') }}</strong>
+            <span>{{ __('web.Rights_Reserved') }}</span></p>
         <div class="credits">
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a
-                href="https://themewagon.com" target="_blank">ThemeWagon</a>
+            {{ __('web.Designed_by') }}<a href="{{ url('/') }}"> Mustafa Shokry </a> {{ __('web.Powered_by') }}
+            <a href="https://nabta.tech/" target="_blank">Nabta.tech</a>
         </div>
     </div>
 

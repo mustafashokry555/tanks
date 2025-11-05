@@ -3,14 +3,14 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    {{-- <title>{{ $setting->name_en }}</title> --}}
+    <title>{{ __('web.title') }}</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
 
     <!-- Favicons -->
-    {{-- <link href="{{ $setting->logoLink }}" rel="icon"> --}}
+    <link href="{{ asset('assets/web/img/icon.png') }}" rel="icon">
     <link href="{{ asset('assets/web/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
 
     <!-- Fonts -->

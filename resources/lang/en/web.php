@@ -7,7 +7,12 @@ return [
     | Website Language Lines (English)
     |--------------------------------------------------------------------------
     */
-
+    'Copyright' => 'Copyright',
+    'Designed_by' => 'Designed by',
+    'Powered_by' => 'Powered by',
+    'Useful_Links' => 'Useful Links',
+    'Rights_Reserved' => 'All Rights Reserved',
+    'title' => 'Arab Company for Manufacturing',
     // ===== Slider 1: Quality & Trust =====
     'slider1_title' => 'Reliable Water Tanks for Every Home',
     'slider1_subtitle' => 'Built to last, designed for pure water storage — trust ASA quality in every drop.',
@@ -25,6 +30,10 @@ return [
 
     // ===== General Site Sections (optional) =====
     'contact_title' => 'Contact Us',
+    'contact' => 'Contact Us',
+    'about' => 'About',
+    'service' => 'Services',
+    'profile' => 'Profile',
     'home' => 'Home',
 
     // ===== About Section =====
@@ -96,4 +105,21 @@ return [
         ],
     ],
 
+    // ===== Company Services List =====
+    'service_list_1' => 'Water Tank Manufacturing',
+    'service_list_2' => 'Custom Tank Design',
+    'service_list_3' => 'Tank Installation & Maintenance',
+    'service_list_4' => 'Industrial Tank Solutions',
+    'service_list_5' => 'Plastic & Fiberglass Products',
+
+    'Email' => 'Email',
+    'Phone' => 'Phone',
+    'Portfolio' => 'Portfolio',
+    'portfolio_text' => 'Explore our wide range of water tanks — from residential to industrial use — designed with precision, durability, and modern technology to ensure safe water storage for every need.',
+
+    // ===== Team Section =====
+    'team_title' => 'Our Team',
+    'team_text' => 'Meet the skilled professionals behind our success — engineers, technicians, and experts dedicated to building high-quality water tanks that last for years.',
+
+    'contact_text' => 'Get in touch with us for high-quality water storage solutions. Our team is ready to assist you with tank installation, maintenance, and custom designs to meet your needs.',
 ];
